@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб№2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* стиль блоков */
+        .blok {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid darkblue;
+        }
+        
+        .malenkiy-blok {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid darkgreen;
+        }
+        
+        .roditel {
+            background-color: lightgray;
+            border: 2px dashed gray;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .zadanie {
+            border: 1px solid black;
+            padding: 15px;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 0;
+            color: black;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <h1 style="text-align: center;">Lab№2</h1>
+    <!-- ex1 -->
+    <div class="zadanie">
+        <h2>Задание 1: Три блока в ряд</h2>
+        
+        <div class="row">
+            <div class="col">
+                <div class="blok">Блок 1</div>
+            </div>
+            <div class="col">
+                <div class="blok">Блок 2</div>
+            </div>
+            <div class="col">
+                <div class="blok">Блок 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ex2 -->
+    <div class="zadanie">
+        <h2>Задание 2: Контейнер на всю ширину</h2>
+        
+        <div class="container-fluid" style="background-color: yellow; padding: 30px; border: 2px solid orange;">
+            <h1 style="text-align: center;">Привет мир</h1>
+        </div>
+    </div>
+
+    <!-- ex3 -->
+    <div class="zadanie">
+        <h2>Задание 3: Блоки разной ширины</h2>
+        
+        <div class="row">
+            <div class="col-3">
+                <div class="blok">3 колонки</div>
+            </div>
+            <div class="col-6">
+                <div class="blok">6 колонок</div>
+            </div>
+            <div class="col-3">
+                <div class="blok">3 колонки</div>
+            </div>
+        </div>
+    </div>
+
+    <!--ex4 -->
+    <div class="zadanie">
+        <h2>Задание 4: Блоки вверху, по центру и внизу</h2>
+        
+        <p><b>1. Блоки вверху:</b></p>
+        <div class="roditel d-flex align-items-start" style="padding: 10px;">
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 1</div>
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 2</div>
+            <div class="malenkiy-blok">Блок 3</div>
+        </div>
+        
+        <p><b>2. Блоки по центру:</b></p>
+        <div class="roditel d-flex align-items-center" style="padding: 10px;">
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 1</div>
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 2</div>
+            <div class="malenkiy-blok">Блок 3</div>
+        </div>
+        
+        <p><b>3. Блоки внизу:</b></p>
+        <div class="roditel d-flex align-items-end" style="padding: 10px;">
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 1</div>
+            <div class="malenkiy-blok" style="margin-right: 10px;">Блок 2</div>
+            <div class="malenkiy-blok">Блок 3</div>
+        </div>
+    </div>
+
+    <!-- ex5 -->
+    <div class="zadanie">
+        <h2>Задание 5: Два блока с отступом</h2>
+        
+        <div class="row" style="gap: 20px;">
+            <div class="col" style="background-color: blue; color: white; padding: 20px; text-align: center; border: 2px solid darkblue;">
+                Блок 1
+            </div>
+            <div class="col" style="background-color: blue; color: white; padding: 20px; text-align: center; border: 2px solid darkblue;">
+                Блок 2
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
